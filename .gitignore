@@ -1,0 +1,8 @@
+# Claude Code local state
+.claude/settings.local.json
+.claude/worktrees/
+.claude/history.jsonl
+.claude/debug/
+
+# macOS
+.DS_Store

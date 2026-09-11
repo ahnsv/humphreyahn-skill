@@ -1,0 +1,21 @@
+{
+  "name": "humphreyahn-skills",
+  "version": "0.1.0",
+  "description": "Humphrey Ahn's agent skills: writing code a human can read a month later, and building skills that hold up.",
+  "author": {
+    "name": "Humphrey Ahn",
+    "url": "https://github.com/ahnsv"
+  },
+  "repository": "https://github.com/ahnsv/humphreyahn-skill",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "engineering",
+    "code-comments",
+    "meta"
+  ],
+  "skills": [
+    "./skills/coding/write-comment",
+    "./skills/meta/think-in-skills"
+  ]
+}
