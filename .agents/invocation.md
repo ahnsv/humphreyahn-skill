@@ -24,12 +24,12 @@ These hold the reusable discipline.
 
 Express a dependency as an explicit instruction to **call the Skill tool** with the named skill:
 
-> Call the Skill tool with "write-comment".
+> Call the Skill tool with "<model-invoked-skill>".
 
 Not a deep `../other-skill/FILE.md` link, and not a bare `/skill` mention left for the model to interpret. Naming the tool is what gets it fired: harnesses expose skill invocation as a tool the model calls, and spelling that out beats dropping a `/name` into prose and hoping it reads as a command. Dropping the leading `/` also keeps it harness-neutral.
 
 The Skill tool takes one skill per call. A step needing two skills is two calls: say `Call the Skill tool twice, for "a" and "b"`, not "call it with a and b".
 
-This convention only holds when the named skill is **model-invoked**. A user-invoked skill can never be reached this way, including by naming it to the Skill tool. Where a step's precondition is a user-invoked skill, phrase it as an instruction for the human: "tell the user to run `/setup`".
+This convention only holds when the named skill is **model-invoked**. A user-invoked skill can never be reached this way, including by naming it to the Skill tool. Where a step's precondition is a user-invoked skill, phrase it as an instruction for the human: "tell the user to run `/<that-skill>`".
 
 Router prose that just names skills for a human to pick from (bucket `README.md`s) isn't invoking anything, so it keeps `/skill`-style names as plain labels.

@@ -38,8 +38,12 @@ for DEST in "${DESTS[@]}"; do
 
   for i in "${!names[@]}"; do
     target="$DEST/${names[$i]}"
+    # $DEST is a flat namespace shared with every other source of skills, and
+    # holds real directories as well as symlinks. Never clobber a real one:
+    # the name collision is the thing to fix, not the directory.
     if [ -e "$target" ] && [ ! -L "$target" ]; then
-      rm -rf "$target"
+      echo "skipped ${names[$i]}: $target is a real directory, not a symlink" >&2
+      continue
     fi
     ln -sfn "${srcs[$i]}" "$target"
     echo "linked ${names[$i]} -> ${srcs[$i]} ($DEST)"

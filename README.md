@@ -21,7 +21,7 @@ It symlinks every skill into `~/.claude/skills` and `~/.agents/skills`, so a `gi
 
 ## Reference
 
-Skills split on one axis: who can invoke them. **User-invoked** skills are reachable only when I type them (e.g. `/grill-me`); they orchestrate. **Model-invoked** skills can be invoked by me *or* reached for automatically when a task fits; they hold the reusable discipline. See [.agents/invocation.md](./.agents/invocation.md).
+Skills split on one axis: who can invoke them. **User-invoked** skills are reachable only when I type them (e.g. `/write-comment`); they orchestrate. **Model-invoked** skills can be invoked by me *or* reached for automatically when a task fits; they hold the reusable discipline. See [.agents/invocation.md](./.agents/invocation.md).
 
 ### Coding
 
