@@ -1,0 +1,2 @@
+- organization structure
+- some rules to follow
