@@ -4,4 +4,4 @@ Beta. Half-baked on purpose: kept here so they're usable locally without shippin
 
 Excluded from `.claude-plugin/plugin.json` and from the top-level `README.md`. `scripts/link-skills.sh` still links them, because local use is where the feedback comes from.
 
-This bucket is currently empty.
+- [human-taste-review](./human-taste-review/SKILL.md) — turn someone else's PR into a narrated, scroll-through tour before you judge it.
